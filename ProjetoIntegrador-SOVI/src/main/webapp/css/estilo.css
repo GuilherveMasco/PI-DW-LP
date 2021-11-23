@@ -1,0 +1,148 @@
+body, html { 
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden; }
+
+a:hover { text-decoration: none; }
+
+h1, h2 { margin: 0; }
+
+.page {
+
+    background-color: #f4511e;	
+    font-family: "Arial", Georgia, Serif;
+    font-size: 18px;
+    font-weight: 300;		
+    padding: 10px 30%;
+    overflow-x: hidden;
+}
+
+.header {
+    border: 3px solid #FFFFFF;
+    border-radius: 25px;
+    max-width: 800px;
+    position: relative;
+    text-align: center;
+}
+
+.content-text {
+    border-radius: 25px;
+    background-color: white;
+    padding: 40px;
+}
+
+.header-text {
+    color: white;
+    padding: 10px;
+}
+
+
+.box {
+    display: block;
+    padding: 10px;
+    margin: 10px;	
+}
+
+.box-text {
+    max-width: 96%;
+    color: white;		
+    width: 100%;
+    height: 100%;
+}
+
+.box-black { background-color: rgba(0, 0, 0, 0.4);	}
+
+.page-title-text {
+    font-size: 2.2em;
+    padding: 15px 25px;
+    text-align: left;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: 1em;
+}
+
+input:focus{
+    border: 3px solid #555;
+}
+
+.footer {  
+    position: fixed;
+    bottom: 10px;
+    left: 30px;
+}
+
+.copyright-text { 
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8em;	
+}
+
+
+.margin-t-30 {	margin-top: 30px; }
+.margin-b-20 {	margin-bottom: 20px; }
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.footer.sticky {
+    position: fixed;
+    bottom: 10px;
+    left: 30px;
+}
+
+#bus {
+  margin-left: 0;
+  cursor: pointer;
+  transition: margin-left 3s ease-in-out;
+}
+
+.back {
+  transform: scaleX(-1);
+  filter: fliph;
+}
